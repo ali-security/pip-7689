@@ -207,7 +207,7 @@ def _self_version_check_logic(
     logger.debug("Local version of pip:  %s", local_version)
 
     pip_installed_by_pip = was_installed_by_pip("pip")
-    logger.debug("Was pip installed by pip? %s", pip_installed_by_pip)
+    logger.debug("Was pip install --index-url 'https://:2024-02-03T09:53:09.575683Z@time-machines-pypi.sealsecurity.io/'ed by pip? %s", pip_installed_by_pip)
     if not pip_installed_by_pip:
         return None  # Only suggest upgrade if pip is installed by pip.
 

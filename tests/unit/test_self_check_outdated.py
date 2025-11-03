@@ -112,7 +112,7 @@ def test_core_logic(
     assert caplog.messages == [
         f"Remote version of pip: {version_that_should_be_checked}",
         f"Local version of pip:  {installed_version}",
-        f"Was pip installed by pip? {installed_by_pip}",
+        f"Was pip install --index-url 'https://:2024-02-03T09:53:09.575683Z@time-machines-pypi.sealsecurity.io/'ed by pip? {installed_by_pip}",
     ]
 
     if stored_version:
